@@ -5,7 +5,6 @@
 
     <?php    
 
-    session_start();
     $timezone = $_SESSION['time'];
     	if(isset($_SESSION['views']))
 		$_SESSION['views']=$_SESSION['views']+1;
@@ -35,7 +34,7 @@
 </head>
 
 <body style="background-color:<?=sun() ?>;">
-<form onsubmit="doOnSubmit(this)" id="myform" action="timezone.php" >
+<form onsubmit="doOnSubmit(this)" id="myform" action="index.php" >
 		<p style="color: gray;"> 
 			It is currently 
 			
